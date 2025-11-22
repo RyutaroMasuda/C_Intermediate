@@ -53,8 +53,6 @@ int linesRead(char *a[],int max){
         printf(">");
         if(getLine(line,sizeof(line))==EOF){break;}
         p=(char*)malloc(strlen(line)+1);
-
-        
         strcpy(p,line);
         a[z]=p;
     }
